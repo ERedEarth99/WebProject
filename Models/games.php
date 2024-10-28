@@ -1,4 +1,5 @@
 <?php
+namespace games;
 //to be used later
 function get_media_by_category($category_id) {
     global $db;
