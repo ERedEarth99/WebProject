@@ -75,9 +75,9 @@ CREATE TABLE IF NOT EXISTS `games` (
 
 INSERT INTO `games` (`GameID`, `GameName`, `ReleaseYear`, `Rating`, `Developer`, `Publisher`, `GameGenre`) VALUES
 (1, 'Call Of Duty Black Ops 6', 2024, 7, 'Treyarch', 'Activision', 'Action'),
-(2, 'Silent Hill 2', 10, 2024, 'Bloober Team', 'Konami', 'Horror'),
-(3, 'The Stanley Parable', 9, 2013, 'Galactic Cafe', 'Self-Published', 'Comedy'),
-(4, 'I Love You, Colonel Sanders', 3, 2024, 'Psyop', 'KFC', 'Romance');
+(2, 'Silent Hill 2', 2024, 10, 'Bloober Team', 'Konami', 'Horror'),
+(3, 'The Stanley Parable', 2013, 9, 'Galactic Cafe', 'Self-Published', 'Comedy'),
+(4, 'I Love You, Colonel Sanders', 2024, 3, 'Psyop', 'KFC', 'Romance');
 
 -- --------------------------------------------------------
 
