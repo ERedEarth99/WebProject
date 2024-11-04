@@ -9,26 +9,29 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>    
   </head>
-  <body>
+  <body>    
     <h1>Video Games</h1>
     <form action="gamesForm.php">
-      <label for="Gname">Game: </label><br>
-      <input type="text" id="Gname" name="Gname" value="">
+      <label for="GameName">Game: </label><br>
+      <input type="text" id="GameName" name="GameName" value="">
 
       <label for="Gyear">Year: </label>
       <input type="text" id="Gyear" name="Gyear" value="">
 
-      <label for="Gdeveloper">Developer: </label>
-      <input type="text" id="Gdeveloper" name="Gdeveloper" value="">
+      <label for="Developer">Developer: </label>
+      <input type="text" id="Developer" name="Developer" value="">
 
-      <label for="Gpublisher"> Publisher: </label>
-      <input type="text" id="Gpublisher" name="Gpublisher" value="">
+      <label for="ReleaseYear">Year: </label>
+      <input type="text" id="ReleaseYear" name="ReleaseYear" value="">
+      
+      <label for="Publisher"> Publisher: </label>
+      <input type="text" id="Publisher" name="Publisher" value="">
 
-      <label for="Ggenre"> Genre: </label>
-      <input type="text" id="Ggenre" name="Ggenre" value="">
+      <label for="GameGenre"> Genre: </label>
+      <input type="text" id="GameGenre" name="GameGenre" value="">
 
-      <label for="Grating"> Rating:  </label>
-      <input type="text" id="Grating" name="Grating" value=""> <br>
+      <label for="Rating"> Rating:  </label>
+      <input type="text" id="Rating" name="Rating" value=""> <br>
 
       <input type="Submit" value="Submit">
     </form>
