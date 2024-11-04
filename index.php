@@ -10,8 +10,14 @@
 
 
 
-    //AS Variable for holding data as needed
-    $DataHelper = '';
+    //AS - session data to store if you are working with media types or a genre
+    $lifetime = (60 * 60 * 24) * 7; //AS - Lasts for a week
+    session_set_cookie_params($lifetime, '/');
+    session_start();
+    if (empty($_SESSION['selectedGenre'])) {
+        $_SESSION['SortKey'] = "None";
+    }
+
 
     //AS - Grab action for use.
     $action = filter_input(INPUT_POST, 'action');
@@ -71,6 +77,11 @@
             break;
         case 'update_game':
             include('gameForm.php');
+            break;
+        case 'get_selected_list':
+            $_SESSION[SortKey] = $_POST['GenreSelector'];
+            
+            include('selectedList.php');
             break;
     }
 ?>
