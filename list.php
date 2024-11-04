@@ -131,6 +131,21 @@ AS - List all tables information and options to interact with the database
     </table>
     <form action="index.php" value="add_game">
             <input type="submit" value="Add Game">
-        </form>
+    </form>
+    <br>
+    <h2>Get list by genre</h2>
+    <!-- AS Selector to only return values of a certain genre -->
+     <form action="index.php" value="get_selected_list" method="post"> 
+        <label>Get genre list: </label>
+        <select name="GenreSelector" id="GenreSelector">
+            <option value="None">None</option>
+            <option value="Action">Action</option>
+            <option value="Horror">Horror</option>
+            <option value="Comedy">Comedy</option>
+            <option value="Romance">Romance</option>
+        </select>
+        <input type="Submit" value="Submit">
+     </form>
+
 </body>
 </html>
