@@ -11,38 +11,38 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>    
 </head>
 <body>
-<h1>Books</h1>
-<!-- // Books Forms -->
-<form action="booksForm.php">
-<label for="Bname">Book: 
+<h1>Movies</h1>
+<!-- // Movie Forms -->
+<form action="movieForms.php">
+<label for="Mname">Movie: 
 </label><br>
-<input type="text" id="Bname"
-name="Bname" value="">
+<input type="text" id="MovieName"
+name="MovieName" value="">
 
-<label for="Byear">Year: 
+<label for="ReleaseYear">Year: 
 </label>
-<input type="text" id="Byear"
-name="Byear" value="">
+<input type="text" id="ReleaseYear"
+name="ReleaseYear" value="">
 
-<label for="Bauthor">  Author: 
+<label for="Director"> Director: 
 </label>
-<input type="text" id="Bauthor"
-name="Bauthor" value="">
+<input type="text" id="Mdirector"
+name="Director" value="">
 
-<label for="Bpublisher"> Publisher: 
+<label for="Publisher"> Publisher: 
 </label>
-<input type="text" id="Bpublisher"
-name="Bpublisher" value="">
+<input type="text" id="Publisher"
+name="Publisher" value="">
 
-<label for="Bgenre"> Genre: 
+<label for="MovieGenre"> Genre: 
 </label>
-<input type="text" id="Bgenre"
-name="Bgenre" value="">
+<input type="text" id="MovieGenre"
+name="MovieGenre" value="">
 
-<label for="Brating"> Rating: 
+<label for="Rating"> Rating: 
 </label>
-<input type="text" id="Brating"
-name="Brating" value=""><br>
+<input type="text" id="Rating"
+name="Rating" value=""><br>
 
 <input type="Submit" value="Submit">
 </form>
