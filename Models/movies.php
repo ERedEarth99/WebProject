@@ -57,7 +57,7 @@ function update_product($movie_id, $release, $name, $director, $publisher, $rati
     $statement->bindValue(':release', $release);
     $statement->bindValue(':movie_name', $name);
     $statement->bindValue(':rating', $rating);
-    $statement->bindValue(':director', director);
+    $statement->bindValue(':director', $director);
     $statement->bindValue(':publisher', $publisher);
     $statement->bindValue(':genre', $genre);
     $statement->execute();
@@ -67,7 +67,7 @@ function update_product($movie_id, $release, $name, $director, $publisher, $rati
 //AS - Took the old add_product and removed the ID field. Leaving the ID field blank will auto generate an ID.
 function add_product($release, $name, $director, $publisher, $rating, $genre) {
     global $db;
-    $query = 'INSERT INTO books
+    $query = 'INSERT INTO movies
                  (MovieName, ReleaseYear, Rating, Director, Publisher, MovieGenre)
               VALUES
                  (:movie_name, :release, :rating, :director, :publisher, :genre)';

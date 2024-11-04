@@ -59,7 +59,7 @@ function update_product($game_id, $release, $name, $developer, $publisher, $rati
     $statement->bindValue(':release', $release);
     $statement->bindValue(':game_name', $name);
     $statement->bindValue(':rating', $rating);
-    $statement->bindValue(':developer', developer);
+    $statement->bindValue(':developer', $developer);
     $statement->bindValue(':publisher', $publisher);
     $statement->bindValue(':genre', $genre);
     $statement->execute();
@@ -78,7 +78,7 @@ function add_product($release, $name, $developer, $publisher, $rating, $genre) {
     $statement->bindValue(':release', $release);
     $statement->bindValue(':game_name', $name);
     $statement->bindValue(':rating', $rating);
-    $statement->bindValue(':developer', developer);
+    $statement->bindValue(':developer', $developer);
     $statement->bindValue(':publisher', $publisher);
     $statement->bindValue(':genre', $genre);
     $statement->execute();
