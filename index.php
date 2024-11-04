@@ -36,7 +36,7 @@
             include('gamesForm.php');
             break;
         case 'show_movie_form':
-            include('moviesForm.php')
+            include('moviesForm.php');
             break;
         case 'add_book':
             include('index.php');
