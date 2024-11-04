@@ -14,35 +14,35 @@
 <h1>Books</h1>
 <!-- // Books Forms -->
 <form action="booksForm.php">
-<label for="Bname">Book: 
+<label for="BookName">Book: 
 </label><br>
-<input type="text" id="Bname"
-name="Bname" value="">
+<input type="text" id="BookName"
+name="BookName" value="">
 
-<label for="Byear">Year: 
+<label for="ReleaseYear">Year: 
 </label>
-<input type="text" id="Byear"
-name="Byear" value="">
+<input type="text" id="ReleaseYear"
+name="ReleaseYear" value="">
 
-<label for="Bauthor">  Author: 
+<label for="Author">  Author: 
 </label>
-<input type="text" id="Bauthor"
-name="Bauthor" value="">
+<input type="text" id="Author"
+name="Author" value="">
 
-<label for="Bpublisher"> Publisher: 
+<label for="Publisher"> Publisher: 
 </label>
-<input type="text" id="Bpublisher"
-name="Bpublisher" value="">
+<input type="text" id="Publisher"
+name="Publisher" value="">
 
-<label for="Bgenre"> Genre: 
+<label for="BookGenre"> Genre: 
 </label>
-<input type="text" id="Bgenre"
-name="Bgenre" value="">
+<input type="text" id="BookGenre"
+nameBookGenreBgenre" value="">
 
-<label for="Brating"> Rating: 
+<label for="Rating"> Rating: 
 </label>
-<input type="text" id="Brating"
-name="Brating" value=""><br>
+<input type="text" id="Rating"
+name="Rating" value=""><br>
 
 <input type="Submit" value="Submit">
 </form>
