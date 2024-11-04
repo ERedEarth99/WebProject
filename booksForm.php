@@ -31,7 +31,7 @@
     ?>
     <!-- // Books Forms -->
     <form action="booksForm.php">
-    <label for="BookName">Book: </label><br>
+    <label for="BookName">Book: </label>
     <input type="text" id="BookName" 
     name="BookName" value="<?php 
         if ($IDPresent == true) {
