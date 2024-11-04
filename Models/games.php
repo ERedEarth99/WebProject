@@ -59,10 +59,10 @@ function update_product($game_id, $release, $name, $developer, $publisher, $rati
 //AS - Took the old add_product and removed the ID field. Leaving the ID field blank will auto generate an ID.
 function add_product($release, $name, $developer, $publisher, $rating, $genre) {
     global $db;
-    $query = 'INSERT INTO books
+    $query = 'INSERT INTO games
                  (GameName, ReleaseYear, Rating, Developer, Publisher, GameGenre)
               VALUES
-                 (:book_name, :release, :rating, :author, :publisher, :genre)';
+                 (:game_name, :release, :rating, :developer, :publisher, :genre)';
     $statement = $db->prepare($query);
     $statement->bindValue(':game_id', $game_id);
     $statement->bindValue(':release', $release);
