@@ -26,6 +26,7 @@ SET time_zone = "+00:00";
 --
 -- Table structure for table `books`
 --
+CREATE DATABASE genredb;
 
 DROP TABLE IF EXISTS `books`;
 CREATE TABLE IF NOT EXISTS `books` (
