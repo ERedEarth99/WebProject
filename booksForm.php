@@ -31,8 +31,6 @@
     ?>
     <!-- // Books Forms -->
     <form action="index.php">
-    <label for="BookName">Book: </label><br>
-    <form action="booksForm.php">
     <label for="BookName">Book: </label>
     <input type="text" id="BookName" 
     name="BookName" value="<?php 
