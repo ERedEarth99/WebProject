@@ -17,16 +17,16 @@
     <?php 
     $IDPresent = true;
     //Checking if we have a book id to see if we are adding a new entry or editing an exisiting one.
-    $bookID = filter_input(INPUT_POST, 'book_ID');
+    $book_ID = filter_input(INPUT_POST, 'book_ID');
     if ($book_ID == NULL) {
       $bookID = filter_input(INPUT_GET, 'book_ID');
-      if ($bookID == NULL) {
+      if ($book_ID == NULL) {
         $IDPresent = false;
       }
     }
     //Store the target row data inside a variable for use
-    if (IDPresent == true) {
-      $target = books\get_product($book_ID)
+    if ($IDPresent == true) {
+      $target = books\get_product($book_ID);
     }
     ?>
     <!-- // Books Forms -->
@@ -35,7 +35,7 @@
     <input type="text" id="BookName" 
     name="BookName" value="<?php 
         if ($IDPresent == true) {
-          echo $target['BookName']
+          echo $target['BookName'];
         };?>">
         <br>
 
@@ -43,41 +43,43 @@
     <input type="text" id="ReleaseYear"
     name="ReleaseYear" value="<?php 
         if ($IDPresent == true) {
-          echo $target['ReleaseYear']
+          echo $target['ReleaseYear'];
         };?>"><br>
 
     <label for="Author">  Author: </label>
     <input type="text" id="Author"
     name="Author" value="<?php 
         if ($IDPresent == true) {
-          echo $target['Author']
+          echo $target['Author'];
         };?>"><br>
 
     <label for="Publisher"> Publisher:  </label>
     <input type="text" id="Publisher"
     name="Publisher" value="<?php 
         if ($IDPresent == true) {
-          echo $target['Publisher']
+          echo $target['Publisher'];
         };?>"><br>
 
     <label for="BookGenre"> Genre: </label>
     <input type="text" id="BookGenre"
     name= "BookGenre" value="<?php 
         if ($IDPresent == true) {
-          echo $target['BookGenre']
+          echo $target['BookGenre'];
+        };?>"><br>
+
+    <label for="Rating"> Rating: </label>
+    <input type="text" id="Rating"
+    name="Rating" value="<?php 
+        if ($IDPresent == true) {
+          echo $target['Rating'];
         };?>"><br>
 
     <?php 
     if ($IDPresent == true) {
-      echo "<input type=\"hidden\" id=\"BookID\" value=" + $book_ID
-       + "\">";
+      echo "<input type=\"hidden\" id=\"BookID\" value=" . $book_ID
+       . "\">";
     }
     ?>
-
-    <label for="Rating"> Rating: </label>
-    <input type="text" id="Rating"
-    name="Rating" value=""><br>
-
     <input type="Submit" value="Submit">
     </form>
   </body>
