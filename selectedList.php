@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 
 <!-- 
-AS - List a sorted table information
--->
+AS - List a sorted tables info and edit delete functions-->
 
 <html lang="en">
 <head>
