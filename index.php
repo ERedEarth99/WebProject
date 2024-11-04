@@ -2,11 +2,13 @@
 <?php 
 
     //AS - Add in all Functions
-    require_once('books.php');
-    require_once('database.php');
-    require_once('games.php');
-    require_once('movies.php');
-    require_once('genre.php');
+    require_once('./Models/books.php');
+    require_once('./Models/database.php');
+    require_once('./Models/games.php');
+    require_once('./Models/movies.php');
+    require_once('./Models/genre.php');
+
+
 
     //AS Variable for holding data as needed
     $DataHelper = '';
@@ -22,9 +24,9 @@
     //AS - All HTML should come from the controller. There should never be an HTML file.
     switch($action) {
         case 'show_list':
-            $books = get_all_books();
-            $movies = get_all_movies();
-            $games = get_all_games();
+            $books = books\get_all_books();
+            $movies = movies\get_all_movies();
+            $games = games\get_all_games();
             include('list.php');
             break;
         case 'show_book_form':

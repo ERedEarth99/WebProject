@@ -1,5 +1,15 @@
 <?php
 namespace games;
+//AS - Get All function
+function get_all_games() {
+    global $db;
+    $query = 'SELECT * FROM games';
+    $statement = $db->prepare($query);
+    $statement->execute();
+    $media = $statement->fetchAll();
+    $statement->closeCursor();
+    return $media;
+}
 //to be used later
 function get_media_by_category($category_id) {
     global $db;

@@ -1,5 +1,14 @@
 <?php
 namespace movies;
+function get_all_movies() {
+    global $db;
+    $query = 'SELECT * FROM movies';
+    $statement = $db->prepare($query);
+    $statement->execute();
+    $media = $statement->fetchAll();
+    $statement->closeCursor();
+    return $media;
+}
 //to be used later
 function get_media_by_category($category_id) {
     global $db;
