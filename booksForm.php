@@ -16,16 +16,16 @@
   <body>
   <h1>Books</h1>
   <table style="width:45%">
-  
-        <!-- add movies rows here //AS - MOVIES? This is Books! Don't copy past blindly--> 
+      <!-- add movies rows here //AS - MOVIES? This is Books! Don't copy past blindly-->
+      <!--add books rows here -->
    <tr>
     <td><form action="index.php" method="post">
-     <th>Movie: <?php echo $_GET["Bname"]; ?></th>
-     <th>Year: <?php echo $_GET["Byear"]; ?></th>
-     <th>Author: <?php echo $_GET["Bauthor"]; ?></th>
-     <th>Publisher: <?php echo $_GET["Bpublisher"]; ?></th>
-     <th>Genre: <?php echo $_GET["Bgenre"]; ?></th>
-     <th>Rating: <?php echo $_GET["Brating"]; ?></th>
+     <th>Movie: <?php echo $_GET["BookName"]; ?></th>
+     <th>Year: <?php echo $_GET["ReleaseYear"]; ?></th>
+     <th>Author: <?php echo $_GET["Author"]; ?></th>
+     <th>Publisher: <?php echo $_GET["Publisher"]; ?></th>
+     <th>Genre: <?php echo $_GET["BookGenre"]; ?></th>
+     <th>Rating: <?php echo $_GET["Rating"]; ?></th>
      <td><form></td>
     </form>
     <input type="submit" value="submit">
