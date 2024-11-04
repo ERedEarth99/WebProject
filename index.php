@@ -45,7 +45,6 @@
             include('moviesForm.php');
             break;
         case 'add_book':
-            include('booksForm.php');
             $release = $_POST['ReleaseYear'];
             $name = $_POST['BookName'];
             $author = $_POST['Author'];
