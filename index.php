@@ -32,10 +32,16 @@
         case 'show_book_form':
             include('booksForm.php');
             break;
-        case 'show_movie_form':
+        case 'show_game_form':
+            include('gamesForm.php');
+            break;
+        case 'add_book':
+            include('index.php');
+            break;
+        case 'add_movie':
             include('moviesForm.php');
             break;
-        case 'Show_game_form':
+        case 'add_game':
             include('gamesForm.php');
             break;
         case 'delete_book':
@@ -48,13 +54,13 @@
             include('list.php');
             break;
         case 'update_book':
-            include('booksForm.php');
+            include('bookForm.php');
             break;
         case 'update_movie':
-            include('moviesForm.php');
+            include('movieForm.php');
             break;
         case 'update_game':
-            include('gamesForm.php');
+            include('gameForm.php');
             break;
     }
 ?>

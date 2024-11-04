@@ -48,7 +48,8 @@ AS - List all tables information and options to interact with the database
         </tr>
         <?php endforeach ?>
         </table>
-        <form action="index.php" value="add_book">
+        <form action="index.php" method = "post">
+            <input type="hidden" name="action" value="show_book_form">
             <input type="submit" value="Add Book">
         </form>
         <h2>Movies</h2>
