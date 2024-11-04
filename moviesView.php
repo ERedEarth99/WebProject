@@ -16,33 +16,33 @@
 <form action="movieForms.php">
 <label for="Mname">Movie: 
 </label><br>
-<input type="text" id="Mname"
-name="Mname" value="">
+<input type="text" id="MovieName"
+name="MovieName" value="">
 
-<label for="Ymovie">Year: 
+<label for="ReleaseYear">Year: 
 </label>
-<input type="text" id="Ymovie"
-name="Ymovie" value="">
+<input type="text" id="ReleaseYear"
+name="ReleaseYear" value="">
 
-<label for="Mdirector"> Director: 
+<label for="Director"> Director: 
 </label>
 <input type="text" id="Mdirector"
-name="Mdirector" value="">
+name="Director" value="">
 
-<label for="Mpublisher"> Publisher: 
+<label for="Publisher"> Publisher: 
 </label>
-<input type="text" id="Mpublisher"
-name="Mpublisher" value="">
+<input type="text" id="Publisher"
+name="Publisher" value="">
 
-<label for="Mgenre"> Genre: 
+<label for="MovieGenre"> Genre: 
 </label>
-<input type="text" id="Mgenre"
-name="Mgenre" value="">
+<input type="text" id="MovieGenre"
+name="MovieGenre" value="">
 
-<label for="Mrating"> Rating: 
+<label for="Rating"> Rating: 
 </label>
-<input type="text" id="Mrating"
-name="Mrating" value=""><br>
+<input type="text" id="Rating"
+name="Rating" value=""><br>
 
 <input type="Submit" value="Submit">
 </form>
