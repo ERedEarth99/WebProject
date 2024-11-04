@@ -20,16 +20,16 @@ table {
 <body>
 <h1>Video Games</h1>
 <table style="width:45%">
-  
-        <!-- add movies rows here -->
+        <!-- add video games rows here -->
    <tr>
     <td><form action="index.php" method="post">
-     <th>Movie: <?php echo $_GET["Gname"]; ?></th>
-     <th>Year: <?php echo $_GET["Gyear"]; ?></th>
-     <th>Developer: <?php echo $_GET["Gdeveloper"]; ?></th>
-     <th>Publisher: <?php echo $_GET["Gpublisher"]; ?></th>
-     <th>Genre: <?php echo $_GET["Ggenre"]; ?></th>
-     <th>Rating: <?php echo $_GET["Grating"]; ?></th>
+         <td>Movie: <?php echo $game['GameName'] ?> </td>
+        <td><?php echo $game['Developer'] ?> </td>
+        <td><?php echo $game['ReleaseYear'] ?> </td>
+        <td><?php echo $game['Publisher'] ?> </td>
+        <td><?php echo $game['Rating'] ?> </td>
+        <td><?php echo $game['GameGenre'] ?> </td>
+  
      <td><form></td>
     </form>
     <input type="submit" value="submit">
