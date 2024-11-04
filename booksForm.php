@@ -16,7 +16,7 @@
 
     <?php 
     $IDPresent = true;
-    //Checking if we have a book id to see if we are adding a new entry or editing an exisiting one.
+    //AS - Checking if we have a book id to see if we are adding a new entry or editing an exisiting one.
     $book_ID = filter_input(INPUT_POST, 'book_ID');
     if ($book_ID == NULL) {
       $bookID = filter_input(INPUT_GET, 'book_ID');
@@ -24,7 +24,7 @@
         $IDPresent = false;
       }
     }
-    //Store the target row data inside a variable for use
+    //AS - Store the target row data inside a variable for use
     if ($IDPresent == true) {
       $target = books\get_product($book_ID);
     }
@@ -32,8 +32,6 @@
     <!-- // Books Forms -->
     <form action="index.php">
     <label for="BookName">Book: </label><br>
-    <form action="booksForm.php">
-    <label for="BookName">Book: </label>
     <input type="text" id="BookName" 
     name="BookName" value="<?php 
         if ($IDPresent == true) {
