@@ -77,7 +77,7 @@
         case 'update_game':
             include('gameForm.php');
             break;
-        case 'get_selected_list':
+        case 'get_selected_list': //This will get a different view similar to list.php but organized by a single genre.
             $_SESSION[SortKey] = $_POST['GenreSelector'];
             
             include('selectedList.php');
