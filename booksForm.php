@@ -36,4 +36,3 @@
 </table>
 </body>
 </html>
-<!-- $id, $release, $name, $director, $publisher, $rating, $genre -->
