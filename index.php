@@ -39,7 +39,14 @@
             include('moviesForm.php');
             break;
         case 'add_book':
-            include('index.php');
+            include('booksForm.php');
+            $release = $_POST['ReleaseYear'];
+            $name = $_POST['BookName'];
+            $author = $_POST['Author'];
+            $publisher = $_POST['Publisher'];
+            $rating = $_POST['Rating'];
+            $genre = $_POST['BookGenre'];
+            books\add_product($release, $bname, $author, $publisher, $rating, $genre);
             break;
         case 'add_movie':
             include('moviesForm.php');

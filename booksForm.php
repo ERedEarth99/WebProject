@@ -30,7 +30,7 @@
     }
     ?>
     <!-- // Books Forms -->
-    <form action="booksForm.php">
+    <form action="index.php">
     <label for="BookName">Book: </label><br>
     <input type="text" id="BookName" 
     name="BookName" value="<?php 
@@ -73,14 +73,14 @@
         if ($IDPresent == true) {
           echo $target['Rating'];
         };?>"><br>
-
+          <input type="hidden" name="action" value="add_book">
+          <input type="submit" value="Add Book">
     <?php 
     if ($IDPresent == true) {
       echo "<input type=\"hidden\" id=\"BookID\" value=" . $book_ID
        . "\">";
     }
     ?>
-    <input type="Submit" value="Submit">
     </form>
   </body>
 </html>
