@@ -19,17 +19,16 @@ table {
 </head>
 <body>
 <h1>Movies</h1>
-<table style="width:45%">
-  
+<table style="width:45%">  
         <!-- add movies rows here -->
    <tr>
     <td><form action="index.php" method="post">
-     <th>Movie: <?php echo $_GET["Mname"]; ?></th>
-     <th>Year: <?php echo $_GET["Ymovie"]; ?></th>
-     <th>Director: <?php echo $_GET["Mdirector"]; ?></th>
-     <th>Publisher: <?php echo $_GET["Mpublisher"]; ?></th>
-     <th>Genre: <?php echo $_GET["Mgenre"]; ?></th>
-     <th>Rating: <?php echo $_GET["Mrating"]; ?></th>
+     <th>Movie: <?php echo $_GET["MovieName"]; ?></th>
+     <th>Year: <?php echo $_GET["ReleaseYear"]; ?></th>
+     <th>Director: <?php echo $_GET["Director"]; ?></th>
+     <th>Publisher: <?php echo $_GET["Publisher"]; ?></th>
+     <th>Genre: <?php echo $_GET["MovieGenre"]; ?></th>
+     <th>Rating: <?php echo $_GET["Rating"]; ?></th>
      <td><form></td>
     </form>
     <input type="submit" value="submit">
