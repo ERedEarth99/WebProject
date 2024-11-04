@@ -33,9 +33,9 @@ AS - List all tables information and options to interact with the database
         <td><?php echo $book['BookGenre'] ?> </td>
         <td> <!-- AS - Update Function -->
             <form action = "index.php" method = "post">
-                <input type="hidden" name="action" value="update_book">
-                    <input type="hidden" name="movie_ID" value="<?php echo $book['BookID'];?>">
-                    <input type="submit" value="Update">
+                <input type="hidden" name="action" value="show_book_form">
+                    <input type="hidden" name="book_ID" value="<?php echo $book['BookID'];?>">
+                    <input type="submit" value="Edit">
             </form>
         </td>
         <td> <!-- AS - Simple Delete Functionality -->
@@ -76,7 +76,7 @@ AS - List all tables information and options to interact with the database
             <form action = "index.php" method = "post">
                 <input type="hidden" name="action" value="update_movie">
                     <input type="hidden" name="movie_ID" value="<?php echo $movie['MovieID'];?>">
-                    <input type="submit" value="Update">
+                    <input type="submit" value="Edit">
             </form>
         </td>
         <td> <!-- AS - Simple Delete Functionality -->
@@ -116,7 +116,7 @@ AS - List all tables information and options to interact with the database
             <form action = "index.php" method = "post">
                 <input type="hidden" name="action" value="update_game">
                     <input type="hidden" name="movie_ID" value="<?php echo $game['GameID'];?>">
-                    <input type="submit" value="Update">
+                    <input type="submit" value="Edit">
             </form>
         </td>
         <td> <!-- AS - Simple Delete Functionality -->
